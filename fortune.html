@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+  <style>
+	  
+html {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+p {
+		  text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+	  }
+	title {
+		  text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+	  }
+	  </style>
+    <meta charset="utf-8">
+    <title>Random Fortune Cookie</title>
+	  <script type="text/javascript">
+      var fortuneCookies = [];
+			fortuneCookies.push('You will crush tons of pussy in the near future');
+			fortuneCookies.push('Tomorrow morning you will wake up in the arms of a gamer girl with no idea how you got there');
+			fortuneCookies.push('You will be a failure in life ecks dee');
+			fortuneCookies.push('The project on your mind will soon gain momentum.');
+			fortuneCookies.push('Top lel');
+			var randomCookie = Math.floor(Math.random() * fortuneCookies.length) + 1;
+    </script>
+  </head>
+  <body>
+    <h1>Random Fortune Cookie</h1>
+      <script type="text/javascript">
+        document.write('<p>'+fortuneCookies[randomCookie-1]+'</p>');
+      </script>
+  </body>
+</html>
