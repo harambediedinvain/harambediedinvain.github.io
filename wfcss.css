@@ -1,0 +1,529 @@
+/*************** POSITIONING ********************/
+
+@media print {
+  .notForPrint {
+    display: none !important;
+  }
+}
+.collapseWrapper {
+  background-color: transparent;
+  border: 1px solid #61cdff;
+  border-width: 1px 1px 1px;
+}
+.collapseWrapper .collapseButton {
+  width: 100%;
+  margin: 0px;
+  background-color: transparent;
+  color: #0088c7;
+  cursor: pointer;
+  text-align: left;
+  opacity: .5;
+  padding: 10px;
+  font-size: 1.0em;
+  line-height: 0.5em;
+}
+.collapseWrapper .collapseButton:hover {
+  opacity: 1;
+}
+.collapseWrapper .collapseButton:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-size: 24px;
+  content: "\f106";
+  margin: 6px;
+}
+.collapseWrapper .collapseButton span:before {
+  content: " hide";
+  font-size: 1em;
+}
+.collapseWrapper .collapseButton p {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 18px;
+  font-size: 1.5em !important;
+  line-height: 1em;
+}
+.collapseWrapper .collapseButton:not(.up) p {
+  display: none;
+}
+.collapseWrapper .collapseButton.up span:before {
+  content: " show";
+}
+.collapseWrapper .collapseButton.up:before {
+  content: "\f107";
+}
+#printPage {
+  width: 42px;
+  cursor: pointer;
+  float: right;
+  margin: 0px 12px 12px 0px;
+  color: #2ebdff;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: white;
+  /* 50% black box shadow */
+  -webkit-box-shadow: 0px 4px 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 4px;
+}
+#printPage:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-size: 2.2em;
+  line-height: 1.0em;
+  content: "\f02f";
+}
+#printPage:hover {
+  color: #94ddff;
+}
+.shadow-mixin-small {
+  -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.shadow-mixin-med {
+  -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.control-panel-mixin {
+  padding: 8px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: white;
+  /* 50% black box shadow */
+  -webkit-box-shadow: 0px 4px 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+body .ui-tooltip {
+  border: 1px solid #ccaa00;
+  background-color: white;
+  /* 50% black box shadow */
+  -webkit-box-shadow: 6px 6px 2px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 6px 6px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 2px 0px rgba(0, 0, 0, 0.1);
+  background-image: url("../images/transWhite95_64x64.png");
+  z-index: 1000;
+}
+body .ui-tooltip-content {
+  color: #bb9900;
+}
+.button {
+  display: inline-block;
+  margin: 0px 8px 0px 8px;
+  font-size: 16px;
+  background-color: #009fd5;
+  font-weight: bold;
+  color: white;
+  padding: 6px 8px 6px 8px;
+  cursor: pointer;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.button:hover {
+  background-color: #35c8e1;
+}
+.button.small {
+  margin-right: 0px;
+  float: right;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 1px 2px;
+  background-color: #ccaa00;
+  -khtml-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.button.med {
+  display: inline-block;
+  margin-right: 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 3px 3px;
+  background-color: #ccaa00;
+  -khtml-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.button.med.edit {
+  background-color: #009fd5;
+}
+.button.med.edit:hover {
+  background-color: #35c8e1;
+}
+.button.submit,
+.button.setActive,
+.button.delete,
+.button.cancel {
+  float: right;
+}
+.button.setActive,
+.button.cancel {
+  background-color: #ccaa00;
+}
+.button.setActive:hover,
+.button.cancel:hover {
+  background-color: #ffcc00;
+}
+.button.delete {
+  background-color: #b20000;
+}
+.button.delete:hover {
+  background-color: red;
+}
+.buttonSet.med {
+  background-color: White;
+  display: inline-block;
+  color: #999999;
+  border: 1px solid #cccccc;
+  padding: 4px;
+}
+#toggleTooltipsButtonSet.buttonSet.med {
+  position: relative;
+  top: 1px;
+  float: right;
+  border-bottom-width: 0px;
+}
+#toggleTooltipsButtonSet .button.med {
+  float: none;
+}
+.buttonLabel.med {
+  display: inline-block;
+  float: none;
+}
+.bootbox-body {
+  text-align: left;
+}
+.modal {
+  z-index: 10000;
+}
+.largeblueWaitcue {
+  background-image: url("../images/loader-blue.gif");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+.blockUi-overlay-spinny-mixin {
+  background-image: url("../images/loader-blue.gif");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-position: center 10px;
+  opacity: 0.8 !important;
+  border: 0px solid black !important;
+}
+.blockUI.blockOverlay {
+  background-image: url("../images/loader-blue.gif");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-position: center 10px;
+  opacity: 0.8 !important;
+  border: 0px solid black !important;
+}
+.nowaitcue .blockUI.blockOverlay {
+  background: 0 !important;
+  background-color: white !important;
+  cursor: not-allowed !important;
+}
+.nowaitcue .waitcue .blockUI.blockOverlay {
+  background-image: url("../images/loader-blue.gif") !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+  background-position: center center !important;
+  background-position: center 10px !important;
+  opacity: 0.8 !important !important;
+  border: 0px solid black !important;
+}
+.wait {
+  background-image: url('../images/ajax-loader.gif') !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+html,
+body {
+  margin: auto;
+  padding: 0;
+  height: auto;
+  text-align: left;
+  background: transparent url(../images/loginBg.gif) repeat-x top left;
+}
+html strong,
+body strong {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+html strong a,
+body strong a {
+  font-weight: normal;
+}
+html a:link,
+body a:link,
+html a:visited,
+body a:visited {
+  color: #3399cc;
+  text-decoration: none;
+}
+html a:hover,
+body a:hover,
+html a:active,
+body a:active {
+  color: #66ccff;
+  text-decoration: none;
+}
+html #main,
+body #main {
+  width: 1000px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  display: block;
+  background: transparent;
+}
+html #main #content,
+body #main #content {
+  height: 527px;
+  width: 1000px;
+  font: 300 14px/1.2em museo-sans, sans-serif;
+  letter-spacing: .02em;
+  background: transparent url(../images/Login/WINCRSlogin_screen2.jpg) no-repeat 0px 110px;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  display: inline-block;
+  zoom: 1;
+  /* IE7 hack */
+
+}
+html #main #masthead,
+body #main #masthead {
+  height: 138px;
+  width: 100%;
+  background: url(../images/WinCrsLogo.png) no-repeat 30px 0px;
+  margin-left: 0px;
+}
+html #main #masthead #lighten,
+body #main #masthead #lighten {
+  margin: 0;
+  background: rgba(255, 255, 255, 0.3) url(../images/WinCrsLogo.png) no-repeat 30px 0px;
+  width: 100%;
+  height: 28px;
+}
+html #main #masthead #header,
+body #main #masthead #header {
+  margin: 0;
+  background: white url(../images/WinCrsLogo.png) no-repeat 30px -28px;
+  width: 100%;
+  height: 82px;
+}
+html #main #masthead.customLogo,
+body #main #masthead.customLogo {
+  background-image: none;
+}
+html #main #masthead.customLogo #lighten,
+body #main #masthead.customLogo #lighten {
+  background-image: none;
+}
+html #main #masthead.customLogo #header,
+body #main #masthead.customLogo #header {
+  background-image: none;
+  background-position-x: 10px;
+  background-position-y: 6px;
+}
+html #main #logoRight,
+body #main #logoRight {
+  height: 24px;
+  width: 139px;
+  background: url(../images/ReadinessRedefined.png) no-repeat top right;
+  margin-top: -77px;
+  margin-right: 30px;
+  float: right;
+}
+html #main #logoRight.customLogo,
+body #main #logoRight.customLogo {
+  background-image: none;
+}
+html #main #login-form,
+body #main #login-form {
+  float: right;
+  width: 184px;
+  position: relative;
+  top: -28px;
+  height: 417px;
+  padding: 0px 15px 0px 15px;
+  background-color: rgba(0, 40, 70, 0.7);
+}
+html #main #login-form #loginErrors,
+body #main #login-form #loginErrors {
+  clear: both;
+  font: 1em museo-sans, sans-serif;
+  color: #cccccc;
+}
+html #main #login-form input.input-validation-error,
+body #main #login-form input.input-validation-error {
+  border: 1px solid red;
+  background-color: #ffeeee;
+}
+html #main #login-form input[type=submit],
+body #main #login-form input[type=submit] {
+  display: inline-block;
+  margin: 0px 8px 0px 8px;
+  font-size: 18px;
+  background-color: #9bbb31;
+  font-weight: bold;
+  color: white;
+  padding: 6px 8px 6px 8px;
+  cursor: pointer;
+  border-width: 0px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  /* future proofing */
+  -khtml-border-radius: 3px;
+  /* for old Konqueror browsers */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+html #main #login-form input[type=submit]:hover,
+body #main #login-form input[type=submit]:hover {
+  background-color: #b2d14e;
+}
+html #main #login-form .validation-summary-errors ul,
+body #main #login-form .validation-summary-errors ul {
+  color: #222266;
+  border: 0px solid #ec4b22;
+  background-color: #eeee99;
+  border: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  padding: 6px;
+  list-style-position: inside;
+  list-style-type: none;
+  margin-left: 4px;
+}
+html #main #login-form .validation-summary-errors li,
+body #main #login-form .validation-summary-errors li {
+  padding: 4px;
+  border-bottom: 1px solid #ec4b22;
+  margin-bottom: 6px;
+}
+html #main #login-form .validation-summary-errors li:last-of-type,
+body #main #login-form .validation-summary-errors li:last-of-type {
+  border-bottom-width: 0px;
+  margin-bottom: 0px;
+}
+html #main #login-form .instructions,
+body #main #login-form .instructions {
+  color: black;
+}
+html #main #login-form .form_label,
+body #main #login-form .form_label {
+  padding-top: 12px;
+  color: #cccccc;
+}
+html #main #login-form .form_field,
+body #main #login-form .form_field {
+  padding: 3px;
+  margin: 0px;
+  width: 170px;
+  color: #333333;
+}
+html #main #footer,
+body #main #footer {
+  padding: 30px 25px 20px 15px;
+  vertical-align: top;
+  font: 300 11px/1.2em museo-sans, sans-serif;
+  color: #717f88;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+html #main #footer .footer_panel,
+body #main #footer .footer_panel {
+  position: relative;
+  float: left;
+  margin: 0px 20px 30px 3px;
+  width: 640px;
+  font: 300 14px/1.4em museo-sans, sans-serif;
+  padding: 20px 20px 24px 25px;
+  z-index: 2;
+  color: #555555;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+html #main #footer .footer_panel a,
+body #main #footer .footer_panel a {
+  color: #37aed1;
+  text-decoration: none;
+}
+html #main #footer .footer_panel .footer_panel_title,
+body #main #footer .footer_panel .footer_panel_title {
+  font: 300 22px/1.2em museo-sans, sans-serif;
+  letter-spacing: -0.02em;
+  color: #004667;
+  padding: 0px;
+  margin: 0px;
+}
+html #main #footer .copyright,
+body #main #footer .copyright {
+  clear: both;
+  margin-left: 15px;
+  color: #333333;
+}
+html .transbgWht,
+body .transbgWht {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+html .roundCorner,
+body .roundCorner {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -khtml-border-radius: 10px;
+}
+.loginMessage {
+  font-size: 16px;
+  display: none;
+  color: #222266;
+  border: 1px solid white;
+  background-color: #eeee99;
+  -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  margin-bottom: 18px;
+}
+.loginMessage .head {
+  font-size: 22px;
+  background: white url('../images/MessageSmCadRed24.png') 8px no-repeat;
+  border-bottom: 1px solid #aacc00;
+  margin: 0px 0px 6px 0px;
+  height: 28px;
+  font-weight: bold;
+  padding: 6px 36px;
+  vertical-align: middle;
+  line-height: 1em;
+}
+.loginMessage p {
+  font-size: 16px;
+  line-height: normal;
+  background-color: #eeee99;
+  margin: 6px;
+  text-align: left;
+}
